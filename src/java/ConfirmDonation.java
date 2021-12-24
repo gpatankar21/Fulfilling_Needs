@@ -24,7 +24,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(urlPatterns = {"/ConfirmDonation"})
 public class ConfirmDonation extends HttpServlet {
 
-
+	//changes for new_feature
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
