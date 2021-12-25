@@ -28,6 +28,7 @@ public class ConfirmDonation extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
+    	//changes in master 
         AdminDAO admin=new AdminDAO();
         int donation_id=Integer.parseInt(request.getParameter("donation_id"));
         String donor_email=request.getParameter("donor_email");
