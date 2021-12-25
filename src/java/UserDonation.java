@@ -45,6 +45,8 @@ public class UserDonation extends HttpServlet {
         String commodity=request.getParameter("ch");
         DonationsBean donation=new DonationsBean();
         
+        
+        //changes for second feature
         UserDAO user=new UserDAO();
         OrgDAO org=new OrgDAO();
         UserBean ob= user.getUserDetails(userid);
