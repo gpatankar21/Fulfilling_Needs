@@ -35,6 +35,7 @@ public class UserDonation extends HttpServlet {
         
         HttpSession session=request.getSession();
         Random num=new Random();
+        //changes for new_feature
         int donation_id=num.nextInt();
         Part com_img=request.getPart("com_img");
         String rec_date=request.getParameter("rec_date");
@@ -44,6 +45,8 @@ public class UserDonation extends HttpServlet {
         String commodity=request.getParameter("ch");
         DonationsBean donation=new DonationsBean();
         
+        
+        //changes for second feature
         UserDAO user=new UserDAO();
         OrgDAO org=new OrgDAO();
         UserBean ob= user.getUserDetails(userid);
